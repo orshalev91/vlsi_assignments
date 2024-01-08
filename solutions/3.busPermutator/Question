@@ -1,0 +1,12 @@
+
+
+I was thinking about how to implement with 8x3 lines
+and what I had in mind is 8 switch cases for each output bit to select between each input bit
+
+case (select[x:x-2]):
+    0 : dout[x/3] <= din [0]
+    1 : dout[x/3] <= din [1]
+    ....
+
+But it would be a wrong solution because it can return an answer that is built by only part of the input bus
+How can I add a dependency in this case?
